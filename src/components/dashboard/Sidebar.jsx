@@ -35,7 +35,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
             <Link
               key={item.path}
               to={item.path}
-              onClick={() => setIsOpen(false)} // Close on navigation (mobile)
+              onClick={() => setIsOpen(false)}
               className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group ${
                 isActive ? 'bg-indigo-50 text-indigo-600 shadow-sm' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900'
               }`}

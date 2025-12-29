@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:5000/api'; // change if needed
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export async function apiRequest(endpoint, options = {}) {
   const token = localStorage.getItem('token');

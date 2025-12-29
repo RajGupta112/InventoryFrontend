@@ -2,13 +2,12 @@ import React from 'react';
 import { Search, Bell, ChevronDown, Menu } from 'lucide-react';
 
 export default function Topbar({ onMenuClick }) {
-  // Manual data as requested
+ 
   const user = {
     name: "User Name",
     role: "Administrator"
   };
 
-  // Logic to get the first letter of the name
   const initial = user.name.charAt(0).toUpperCase();
 
   return (
